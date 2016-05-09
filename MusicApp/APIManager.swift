@@ -28,7 +28,7 @@ class APIManager {
                     
                     do {
                         //* .AllowFragmentation - top level object is not array or Dictionary
-                        // NSJSONSerialization requires Do/Try/Catch converts from NSData to JSON Object and casts it into a dictionary
+                        // NSJSONSerialization requires Do/Try/Catch converts from NSData to JSON Object and casts it into a dictionary Swift 2.0 change
                         
                         if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? [String: AnyObject] {
                             print(json)
