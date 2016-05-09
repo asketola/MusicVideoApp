@@ -23,7 +23,10 @@ class Videos {
     private var _videoLinkToiTunes:String
     private var _videoReleaseDate:String
     
-    // make getters since the variables are private
+    // This gets created from the UI
+    var vImageData:NSData?
+    
+    // make getters since the property variables are private
     
     var videoName: String {
         return _videoName
@@ -65,6 +68,7 @@ class Videos {
         return _videoReleaseDate
     }
     
+    // Our custom initializer
     init(data: JSONDictionary) {
         
         // video name
