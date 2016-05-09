@@ -54,14 +54,46 @@
 		798D32B41CE1061500BDB657 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
-				798D32B51CE1061500BDB657 /* AppDelegate.swift */,
-				798D32B71CE1061500BDB657 /* ViewController.swift */,
-				798D32B91CE1061500BDB657 /* Main.storyboard */,
-				798D32BC1CE1061500BDB657 /* Assets.xcassets */,
-				798D32BE1CE1061500BDB657 /* LaunchScreen.storyboard */,
-				798D32C11CE1061500BDB657 /* Info.plist */,
+				798D32C91CE12D2500BDB657 /* Model */,
+				798D32C81CE12D1100BDB657 /* Controller */,
+				798D32C71CE12C8600BDB657 /* View */,
+				798D32CA1CE12EF500BDB657 /* SupportingFiles */,
 			);
 			path = MusicApp;
+			sourceTree = "<group>";
+		};
+		798D32C71CE12C8600BDB657 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				798D32B91CE1061500BDB657 /* Main.storyboard */,
+				798D32BE1CE1061500BDB657 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		798D32C81CE12D1100BDB657 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				798D32B71CE1061500BDB657 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		798D32C91CE12D2500BDB657 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				798D32B51CE1061500BDB657 /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		798D32CA1CE12EF500BDB657 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				798D32C11CE1061500BDB657 /* Info.plist */,
+				798D32BC1CE1061500BDB657 /* Assets.xcassets */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +318,7 @@
 				798D32C61CE1061600BDB657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
