@@ -32,6 +32,7 @@ func updateCell() {
         musicImage.image = UIImage(data: video!.videoImageData!)
     } else {
         GetVideoImage(video!, imageView: musicImage)
+        print("Get images in background thread")
     }
     
     
@@ -40,6 +41,7 @@ func updateCell() {
     func GetVideoImage(video: Videos, imageView: UIImageView) {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            print("video imageurl: \(video.videoImageUrl)")
             
             let data = NSData(contentsOfURL: NSURL(string: video.videoImageUrl)!)
             

@@ -35,7 +35,7 @@ class Videos {
     }
     
     var videoImageUrl: String {
-        return _videoName
+        return _videoImageUrl
     }
     
     var videoUrl: String {
