@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     
     func didLoadData(videos: [Videos]){
         
+        print(reachabilityStatus)
+        
         // makes variable global
         self.videos = videos
         
