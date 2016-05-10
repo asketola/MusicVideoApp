@@ -15,6 +15,7 @@
 		798D32CC1CE1327000BDB657 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D32CB1CE1327000BDB657 /* APIManager.swift */; };
 		798D32CF1CE145BA00BDB657 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D32CE1CE145BA00BDB657 /* Constants.swift */; };
 		798D32D11CE1476500BDB657 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D32D01CE1476500BDB657 /* MusicVideo.swift */; };
+		798D32D61CE18A7900BDB657 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D32D51CE18A7900BDB657 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		798D32CB1CE1327000BDB657 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		798D32CE1CE145BA00BDB657 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		798D32D01CE1476500BDB657 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
+		798D32D31CE18A7800BDB657 /* MusicApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		798D32D41CE18A7900BDB657 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		798D32D51CE18A7900BDB657 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		798D32B41CE1061500BDB657 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				798D32D21CE1897C00BDB657 /* ObjC */,
 				798D32CD1CE145A400BDB657 /* Utils */,
 				798D32C91CE12D2500BDB657 /* Model */,
 				798D32C81CE12D1100BDB657 /* Controller */,
@@ -111,6 +116,16 @@
 				798D32CE1CE145BA00BDB657 /* Constants.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		798D32D21CE1897C00BDB657 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				798D32D41CE18A7900BDB657 /* Reachability.h */,
+				798D32D51CE18A7900BDB657 /* Reachability.m */,
+				798D32D31CE18A7800BDB657 /* MusicApp-Bridging-Header.h */,
+			);
+			name = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +203,7 @@
 				798D32B81CE1061500BDB657 /* ViewController.swift in Sources */,
 				798D32D11CE1476500BDB657 /* MusicVideo.swift in Sources */,
 				798D32B61CE1061500BDB657 /* AppDelegate.swift in Sources */,
+				798D32D61CE18A7900BDB657 /* Reachability.m in Sources */,
 				798D32CF1CE145BA00BDB657 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,10 +317,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UpEarly.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicApp/MusicApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -312,10 +331,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UpEarly.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicApp/MusicApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
