@@ -12,6 +12,8 @@ class Videos {
     
     // Data encapsulation
     
+    var videoRank = 0
+    
     private var _videoName:String
     private var _videoImageUrl:String
     private var _videoUrl:String
