@@ -42,7 +42,14 @@ class MusicVideoDetailVC: UIViewController {
     }
     
     func prefferedFontChange() {
-        print("The preferred Font has Changed")
+        vGenre.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        vPrice.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        vRights.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        vName.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "ReachStatusChanged:", object: nil)
     }
 
 }
