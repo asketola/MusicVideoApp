@@ -73,6 +73,8 @@ class SettingTVC: UITableViewController {
         securityDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         bestImageDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         apiCount.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        numberOfVideosLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        dragSliderLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)
         
     }
     
