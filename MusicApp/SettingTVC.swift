@@ -35,8 +35,20 @@ class SettingTVC: UITableViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "prefferedFontChange", name: UIContentSizeCategoryDidChangeNotification, object: nil)
         
+        if (NSUserDefaults.standardUserDefaults().objectForKey("APICNT") != nil) {
+            let theValue = NSUserDefaults.standardUserDefaults().objectForKey("APICNT") as! Int
+            apiCount.text = "\(theValue)"
+            sliderCount.value = Float(theValue)
+        }
+        
     }
     
+    @IBAction func valueChanged(sender: AnyObject) {
+        let defualts = NSUserDefaults.standardUserDefaults()
+        defualts.setObject(Int(sliderCount.value) , forKey: "APICNT")
+        apiCount.text = ("\(Int(sliderCount.value))")
+        
+    }
     
     @IBAction func touchIdSec(sender: AnyObject) {
         
