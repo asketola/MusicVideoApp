@@ -19,6 +19,7 @@
 		798D33011CE26F0500BDB657 /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D33001CE26F0500BDB657 /* MusicVideoTVC.swift */; };
 		798D33031CE27DF200BDB657 /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D33021CE27DF200BDB657 /* MusicVideoTableViewCell.swift */; };
 		798D33051CE2861600BDB657 /* image_not_available.gif in Resources */ = {isa = PBXBuildFile; fileRef = 798D33041CE2861600BDB657 /* image_not_available.gif */; };
+		798D33071CE2B7F100BDB657 /* MusicVideoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D33061CE2B7F100BDB657 /* MusicVideoDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		798D33001CE26F0500BDB657 /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 		798D33021CE27DF200BDB657 /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
 		798D33041CE2861600BDB657 /* image_not_available.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image_not_available.gif; sourceTree = "<group>"; };
+		798D33061CE2B7F100BDB657 /* MusicVideoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				798D33001CE26F0500BDB657 /* MusicVideoTVC.swift */,
 				798D32B71CE1061500BDB657 /* ViewController.swift */,
 				798D33021CE27DF200BDB657 /* MusicVideoTableViewCell.swift */,
+				798D33061CE2B7F100BDB657 /* MusicVideoDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				798D32CC1CE1327000BDB657 /* APIManager.swift in Sources */,
+				798D33071CE2B7F100BDB657 /* MusicVideoDetailVC.swift in Sources */,
 				798D32B81CE1061500BDB657 /* ViewController.swift in Sources */,
 				798D32D11CE1476500BDB657 /* MusicVideo.swift in Sources */,
 				798D33031CE27DF200BDB657 /* MusicVideoTableViewCell.swift in Sources */,
