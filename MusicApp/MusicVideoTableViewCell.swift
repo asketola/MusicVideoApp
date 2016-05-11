@@ -23,6 +23,9 @@ class MusicVideoTableViewCell: UITableViewCell {
     
 func updateCell() {
     
+    musicTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+    rank.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+    
     musicTitle.text = video?.videoName
     rank.text = ("Ranking \(video!.videoRank)")
 //    musicImage.image = UIImage(named: "image_not_available.gif")
@@ -41,7 +44,7 @@ func updateCell() {
     func GetVideoImage(video: Videos, imageView: UIImageView) {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            print("video imageurl: \(video.videoImageUrl)")
+//            print("video imageurl: \(video.videoImageUrl)")
             
             let data = NSData(contentsOfURL: NSURL(string: video.videoImageUrl)!)
             

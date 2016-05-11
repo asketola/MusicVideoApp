@@ -29,15 +29,16 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-o9-NuL">
-                                            <rect key="frame" x="182" y="29" width="410" height="91"/>
+                                            <rect key="frame" x="182" y="55" width="410" height="65"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ranking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCF-lK-CXo">
-                                            <rect key="frame" x="182" y="8" width="54" height="21"/>
+                                            <rect key="frame" x="182" y="8" width="105" height="39"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="vaE-l7-mQV"/>
+                                                <constraint firstAttribute="width" constant="105" id="gra-Wq-vI7"/>
+                                                <constraint firstAttribute="height" constant="39" id="vaE-l7-mQV"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,7 +52,7 @@
                                         <constraint firstItem="Qkg-r3-H14" firstAttribute="bottom" secondItem="trA-5J-Efw" secondAttribute="bottomMargin" id="LNj-49-cYC"/>
                                         <constraint firstItem="Qkg-r3-H14" firstAttribute="top" secondItem="trA-5J-Efw" secondAttribute="top" constant="8" id="Mqf-1x-dV1"/>
                                         <constraint firstItem="EPc-o9-NuL" firstAttribute="trailing" secondItem="trA-5J-Efw" secondAttribute="trailingMargin" id="N3Y-VE-vCR"/>
-                                        <constraint firstItem="EPc-o9-NuL" firstAttribute="top" secondItem="ZCF-lK-CXo" secondAttribute="bottom" id="ZzH-a9-3Vm"/>
+                                        <constraint firstItem="EPc-o9-NuL" firstAttribute="top" secondItem="ZCF-lK-CXo" secondAttribute="bottom" constant="8" id="ZzH-a9-3Vm"/>
                                         <constraint firstItem="Qkg-r3-H14" firstAttribute="leading" secondItem="trA-5J-Efw" secondAttribute="leadingMargin" id="beO-lT-07t"/>
                                         <constraint firstItem="ZCF-lK-CXo" firstAttribute="leading" secondItem="Qkg-r3-H14" secondAttribute="trailing" constant="8" symbolic="YES" id="s4R-Ea-1nc"/>
                                         <constraint firstItem="ZCF-lK-CXo" firstAttribute="top" secondItem="Qkg-r3-H14" secondAttribute="top" id="ugK-Vd-FTr"/>
