@@ -24,6 +24,9 @@ class SettingTVC: UITableViewController {
     
     @IBOutlet weak var sliderCount: UISlider!
     
+    @IBOutlet weak var numberOfVideosLabel: UILabel!
+    
+    @IBOutlet weak var dragSliderLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +42,9 @@ class SettingTVC: UITableViewController {
             let theValue = NSUserDefaults.standardUserDefaults().objectForKey("APICNT") as! Int
             apiCount.text = "\(theValue)"
             sliderCount.value = Float(theValue)
+        } else {
+            sliderCount.value = 10.0
+            apiCount.text = ("\(Int(sliderCount.value))")
         }
         
     }

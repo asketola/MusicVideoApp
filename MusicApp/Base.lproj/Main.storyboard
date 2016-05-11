@@ -83,6 +83,12 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="R5C-KR-AuP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh:" destination="5VE-hE-RWS" eventType="valueChanged" id="FbS-yS-mQ1"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DH-gv-Elv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,38 +225,59 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRz-6K-T3N">
-                                                    <rect key="frame" x="8" y="8" width="584" height="50"/>
+                                                    <rect key="frame" x="560" y="26" width="16" height="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Music Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-Vv-OF4">
+                                                    <rect key="frame" x="8" y="31" width="324" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="324" id="8rF-L4-utC"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gRz-6K-T3N" firstAttribute="trailing" secondItem="izP-Ed-39A" secondAttribute="trailingMargin" id="5Wu-JJ-bRC"/>
-                                                <constraint firstItem="gRz-6K-T3N" firstAttribute="top" secondItem="izP-Ed-39A" secondAttribute="topMargin" id="HFM-dm-lL7"/>
-                                                <constraint firstItem="gRz-6K-T3N" firstAttribute="leading" secondItem="izP-Ed-39A" secondAttribute="leadingMargin" id="MDv-XW-pfK"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="gRz-6K-T3N" secondAttribute="bottom" constant="3" id="zjj-No-tex"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gRz-6K-T3N" secondAttribute="trailing" constant="16" id="EXq-OK-1ID"/>
+                                                <constraint firstItem="eiL-Vv-OF4" firstAttribute="top" secondItem="izP-Ed-39A" secondAttribute="topMargin" constant="23" id="i9L-Hd-LIP"/>
+                                                <constraint firstItem="gRz-6K-T3N" firstAttribute="centerY" secondItem="izP-Ed-39A" secondAttribute="centerY" id="jLn-kd-mVf"/>
+                                                <constraint firstItem="eiL-Vv-OF4" firstAttribute="leading" secondItem="izP-Ed-39A" secondAttribute="leadingMargin" id="mTJ-bj-aZB"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="87" id="3Qf-KF-Yvc">
-                                        <rect key="frame" x="0.0" y="460" width="600" height="87"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="3Qf-KF-Yvc">
+                                        <rect key="frame" x="0.0" y="460" width="600" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Qf-KF-Yvc" id="CGj-lS-31c">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-aq-lIZ">
-                                                    <rect key="frame" x="46" y="27" width="509" height="31"/>
+                                                    <rect key="frame" x="46" y="37" width="509" height="31"/>
                                                     <connections>
                                                         <action selector="valueChanged:" destination="6yd-za-iiY" eventType="valueChanged" id="cju-sk-4OP"/>
                                                     </connections>
                                                 </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the slider below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8G-wU-9dj">
+                                                    <rect key="frame" x="169" y="8" width="263" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="263" id="eyg-sN-4JI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Mm7-aq-lIZ" firstAttribute="centerX" secondItem="CGj-lS-31c" secondAttribute="centerX" id="05s-yM-lcs"/>
                                                 <constraint firstItem="Mm7-aq-lIZ" firstAttribute="leading" secondItem="CGj-lS-31c" secondAttribute="leadingMargin" constant="40" id="DDu-JQ-bir"/>
-                                                <constraint firstItem="Mm7-aq-lIZ" firstAttribute="top" secondItem="CGj-lS-31c" secondAttribute="topMargin" constant="19" id="rxz-jr-QEz"/>
+                                                <constraint firstItem="Mm7-aq-lIZ" firstAttribute="top" secondItem="k8G-wU-9dj" secondAttribute="bottom" constant="8" symbolic="YES" id="V3j-vq-90T"/>
+                                                <constraint firstItem="k8G-wU-9dj" firstAttribute="centerX" secondItem="Mm7-aq-lIZ" secondAttribute="centerX" id="YaF-18-gTv"/>
+                                                <constraint firstItem="k8G-wU-9dj" firstAttribute="top" secondItem="CGj-lS-31c" secondAttribute="topMargin" id="o2a-rq-9kc"/>
+                                                <constraint firstItem="Mm7-aq-lIZ" firstAttribute="top" secondItem="CGj-lS-31c" secondAttribute="topMargin" constant="29" id="rxz-jr-QEz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -266,7 +293,9 @@
                         <outlet property="aboutDisplay" destination="5dL-Cn-fdC" id="cmK-PK-g3T"/>
                         <outlet property="apiCount" destination="gRz-6K-T3N" id="OJL-RT-eRj"/>
                         <outlet property="bestImageDisplay" destination="Q7H-6e-NHz" id="sWu-S0-Nmc"/>
+                        <outlet property="dragSliderLabel" destination="k8G-wU-9dj" id="hPd-RW-dKv"/>
                         <outlet property="feedbackDisplay" destination="dQ9-OV-NSz" id="h2p-AU-Xm2"/>
+                        <outlet property="numberOfVideosLabel" destination="eiL-Vv-OF4" id="p43-vi-pFX"/>
                         <outlet property="securityDisplay" destination="gJl-P6-Lgh" id="ZcQ-Mb-tEK"/>
                         <outlet property="sliderCount" destination="Mm7-aq-lIZ" id="Di5-2h-acY"/>
                         <outlet property="touchID" destination="1LG-nd-vdr" id="LHc-Ek-53i"/>
