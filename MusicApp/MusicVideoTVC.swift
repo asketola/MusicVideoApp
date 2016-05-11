@@ -23,6 +23,8 @@ class MusicVideoTVC: UITableViewController {
     
     func preferredFontChange() {
         print("The preffered font has changed")
+        
+        
     }
     
 
