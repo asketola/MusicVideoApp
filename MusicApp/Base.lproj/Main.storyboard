@@ -62,7 +62,7 @@
                                     <outlet property="musicImage" destination="Qkg-r3-H14" id="x76-Ak-h3s"/>
                                     <outlet property="musicTitle" destination="EPc-o9-NuL" id="NmB-JB-XKD"/>
                                     <outlet property="rank" destination="ZCF-lK-CXo" id="TVC-D5-D2Y"/>
-                                    <segue destination="PMD-oP-CgE" kind="show" id="lQq-Fw-VmC"/>
+                                    <segue destination="PMD-oP-CgE" kind="show" identifier="musicDetailIdentifier" id="lQq-Fw-VmC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -113,7 +113,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQy-3S-Tes">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQy-3S-Tes">
                                 <rect key="frame" x="504" y="416" width="76" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="76" id="5pq-f3-INd"/>
@@ -166,6 +166,13 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="vGenre" destination="sYk-Oa-atR" id="spk-ja-Fm1"/>
+                        <outlet property="vName" destination="dB3-be-lgV" id="YTE-O0-69c"/>
+                        <outlet property="vPrice" destination="SQy-3S-Tes" id="vT2-5l-h7o"/>
+                        <outlet property="vRights" destination="T3t-a0-ryn" id="4vu-Q5-gLp"/>
+                        <outlet property="videoImage" destination="u4O-R5-ZEb" id="W4m-0w-JaW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbB-WG-QOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
