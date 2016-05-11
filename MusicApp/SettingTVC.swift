@@ -73,5 +73,15 @@ class SettingTVC: UITableViewController {
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: "ReachStatusChanged:", object: nil)
     }
-
+    
+    private struct storyboard {
+        static let aboutSegueIdentifier = "goToAboutScreen"
+    
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == storyboard.aboutSegueIdentifier {
+                _ = segue.destinationViewController as! AboutVC
+            }
+        }
 }
