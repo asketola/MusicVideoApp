@@ -25,6 +25,8 @@ class MusicVideoDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "prefferedFontChange", name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        
         title = videos.videoArtist
 
         vName.text = videos.videoName
@@ -37,6 +39,10 @@ class MusicVideoDetailVC: UIViewController {
         } else {
             videoImage.image = UIImage(named: "image_not_available.gif")
         }
+    }
+    
+    func prefferedFontChange() {
+        print("The preferred Font has Changed")
     }
 
 }
