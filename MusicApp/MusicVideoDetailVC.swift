@@ -43,6 +43,33 @@ class MusicVideoDetailVC: UIViewController {
         }
     }
     
+    
+    @IBAction func socialMedia(sender: UIBarButtonItem) {
+        shareMedia()
+    }
+    
+    // only be executed if touchID goes through/security
+    func shareMedia() {
+        
+        print("We got here")
+        
+        let act1 = "Have you had the opportunity to see this Music Video?"
+        let act2 = ("\(videos.videoName) by \(videos.videoArtist)")
+        let act3 = "Watch it and tell me what you think?"
+        let act4 = videos.videoLinkToiTunes
+        let act5 = "(Shared with the Music Video App - Step it up!)"
+        
+        let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [act1, act2, act3, act4, act5], applicationActivities: nil)
+        
+        activityViewController.completionWithItemsHandler = {
+            (activity, success, items, error) in
+            
+            if activity == UIActivityTypeMail {
+                print("email selected")
+            }
+        }
+        self.presentViewController(activityViewController, animated: true, completion: nil)
+    }
 
     @IBAction func playVideo(sender: UIBarButtonItem) {
         

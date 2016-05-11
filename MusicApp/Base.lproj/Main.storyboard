@@ -463,6 +463,9 @@
                         </barButtonItem>
                         <barButtonItem systemItem="action" id="AvR-9W-Yyk">
                             <color key="tintColor" red="0.86274509799999999" green="0.14901960780000001" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="socialMedia:" destination="PMD-oP-CgE" id="4gQ-Ij-ken"/>
+                            </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
