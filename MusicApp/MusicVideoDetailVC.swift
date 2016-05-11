@@ -22,7 +22,6 @@ class MusicVideoDetailVC: UIViewController {
     
     @IBOutlet weak var vRights: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
